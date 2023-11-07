@@ -6,9 +6,9 @@ export default class extends Controller {
   validateAlias(event) {
     const alias = event.target.value;
     // Regex to check for special characters
-    const regex = /^[a-zA-Z0-9]+$/;
+    const regex = /^[a-zA-Z0-9\-_]*$/;
 
-    if (!regex.test(alias) && alias.length > 0) {
+    if (!regex.test(alias)) {
       this.errorTarget.classList.remove('text-ice-blue');
       this.errorTarget.classList.add('text-rojo');
     } else {
