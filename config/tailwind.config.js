@@ -9,8 +9,20 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        navy: {
+          'light': '#302b63',
+          'medium': '#24243e',
+          'dark': '#0f0c29',
+        },
+        'light-orange': '#fcd0a1',
+        'ice-blue': '#a9fff7',
+        'cool-grey': '#7d84b2',
+        'rojo': '#fe1a1a',
+      },
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        saira: ['Saira Semi Condensed', ...defaultTheme.fontFamily.sans],
       },
     },
   },
